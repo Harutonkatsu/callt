@@ -1,0 +1,40 @@
+<html>
+  <title>chat web site</title>  
+  <body><div id='output'><div style='display:none' id='error'></div><div style='display:none' id='text_output'></div><div style='display:none' id='result_div'></div><canvas style='display:none' id='result_canvas' width='500' height='400'></canvas></div><script type='text/javascript' src='https://github.kasumigaura.work/nadeshiko_editer/load.js'></script><script id='main' type='なでしこ'>● 表示処理とは
+表示ログクリア
+《掲示板のデータ保存URL》に「https://docs.google.com/spreadsheets/d/1Q3UjbEuBSSd9bJouTRD3xQwZBLyCI0BABpSAJdWJ5CA/edit?usp=sharing」を代入
+《読み込み？書き込み？》に「read」を代入
+《送信データ》に「all」を代入
+「https://script.google.com/macros/s/AKfycbwW0N_477HMVdBXZvk5J-2TVNuBNYhz6YlZtDm2yzrk0-UUQ06NaSpq8OEYGKGGBgxt0Q/exec?request={《読み込み？書き込み？》}&data={《送信データ》}&url={《掲示板のデータ保存URL》}」を《URL》に代入
+《URL》からHTTP取得して、JSONデコードして、《データ》に代入
+《カウント》＝０
+（《データ》の要素数）回繰り返す
+　　「｛《カウント》｝：｛《データ》[《カウント》]｝」と表示
+　　《カウント》＝《カウント》＋１
+ここまで
+
+ここまで
+
+
+表示処理
+
+空のエディタ作成して《入力欄》に代入
+「送信」のボタン作成して、それをクリックした時には
+　　《入力欄》からテキスト取得して《メッセージ》に代入
+
+
+《掲示板のデータ保存URL》に「https://docs.google.com/spreadsheets/d/1Q3UjbEuBSSd9bJouTRD3xQwZBLyCI0BABpSAJdWJ5CA/edit?usp=sharing」を代入
+《読み込み？書き込み？》に「write」を代入
+《送信データ》に《メッセージ》を代入
+
+「https://script.google.com/macros/s/AKfycbwW0N_477HMVdBXZvk5J-2TVNuBNYhz6YlZtDm2yzrk0-UUQ06NaSpq8OEYGKGGBgxt0Q/exec?request={《読み込み？書き込み？》}&data={《送信データ》}&url={《掲示板のデータ保存URL》}」を《URL》に代入
+《URL》からHTTP取得して、JSONデコードして、《データ》に代入
+
+《データ》を表示
+
+表示処理
+
+ここまで
+
+
+</script><script>setTimeout(()=>{autorun_code=document.getElementById('main').innerText;}, 0);</script></body></html>
